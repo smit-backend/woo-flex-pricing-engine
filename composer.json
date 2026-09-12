@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/woo-flex-pricing-engine",
+    "description": "Decoupled variable pricing engine for WooCommerce computing dynamic wholesale, tier, and rule-based pricing arrays on-the-fly.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\Wooflexpricingengine\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\Wooflexpricingengine\\PackageServiceProvider"
+            ]
+        }
+    }
+}
